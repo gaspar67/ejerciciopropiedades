@@ -44,7 +44,7 @@ for clave, valor in piso2.items():
     print(clave,valor)
 print("-"*30)
 
-print("cantidad de departamentos en el piso1: 3")
+print("cantidad de departamentos en el piso1: ",len(piso1))
 
 print("-"*30)
 
