@@ -15,32 +15,42 @@ piso4 = {
     "402": "camila muñoz"
     }
 
+
+
 print("dueño del departamento 202: ",piso2["202"])
 print("-"*30)
+
 piso3["302"] = "juan velez"
 print("piso3 actualizado:")
-print("301: ",piso3["301"])
-print("302: ",piso3["302"])
+for clave, valor in piso3.items():
+    print(clave, valor)
+    
 print("-"*30)
 piso1 ["103"] = "pedro sanchez"
 print("piso1 actualizado:")
-print("101: ",piso1["101"])
-print("102: ",piso1["102"])
-print("103: ",piso1["103"])
+for clave, valor in piso1.items():
+    print(clave,valor)
 print("-"*30)
+
 del piso4["402"]
 print("piso4 actualizado:")
-print("401: ",piso4["401"])
+
+for clave, valor in piso4.items():
+    print(clave,valor)
 print("-"*30)
+
 print("departamentos piso2:")
-print("201: ",piso2["201"])
-print("202: ",piso2["202"])
+for clave, valor in piso2.items():
+    print(clave,valor)
 print("-"*30)
+
 print("cantidad de departamentos en el piso1: 3")
+
 print("-"*30)
+
 print("propietarios piso3")
-print(piso3["301"])
-print(piso3["302"])
+for valor in piso3.values():
+    print(valor)
 
 
 
